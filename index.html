@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Task Tracker</h1>
+    <p>Add your tasks below and keep track of them!</p>
+
+    <div class="form-area">
+        <input type="text" id="taskName" placeholder="Task name">
+        <input type="text" id="taskSubject" placeholder="Subject (e.g. Math)">
+        <select id="taskPriority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <p id="errorMsg" style="color: red;"></p>
+
+    <h2>Tasks:</h2>
+    <div id="taskList">
+        <p>No tasks yet. Add one!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
